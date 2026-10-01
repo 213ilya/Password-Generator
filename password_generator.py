@@ -1,10 +1,10 @@
 import secrets
 
-symbols = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!?@_+<>«»%#=÷"
+symbols = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!?@_+<>«»%#=÷^/"
 
 while True:
     try:
-        length = int(input("Длина пароля: "))
+        length = int(input("Введите длину пароля: "))
         if length < 1:
             print("Длина должна быть больше 0!")
             continue
@@ -18,5 +18,5 @@ while True:
 
     print("Пароль:", password)
 
-    if input("Продолжить? (да/нет): ").lower().strip() == "нет":
+    if input("Хотите ещё один пароль? (да/нет): ").lower().strip() == "нет":
         break
